@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 client = boto3.client('logs')
 
 # the name of the reuired LogGroup (find it in AWS Console -> CloudWatch -> logs)
-log_group_name = '/aws/lambda/copd-s3-monitor'
+log_group_name = '/your/cloudwatch/log/group'
 # number of hours from now back to filter messages in
 log_history_hours = -10
 
